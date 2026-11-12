@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="system-ui,Segoe UI,Roboto,sans-serif">
+<defs>
+<marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#38bdf8"/></marker>
+<marker id="o" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#f5b301"/></marker>
+</defs>
+<rect width="960" height="460" rx="16" fill="#0b1220"/>
+<rect width="960" height="215" rx="16" fill="#12213f" opacity=".6"/>
+<rect y="215" width="960" height="245" rx="16" fill="#1a1410"/>
+<line x1="0" y1="215" x2="960" y2="215" stroke="#38bdf8" stroke-dasharray="6 6" opacity=".5"/>
+<text x="24" y="30" fill="#9aa6bd" font-size="12" font-weight="700" letter-spacing="2">SUPERFICIE</text>
+<text x="24" y="238" fill="#9aa6bd" font-size="12" font-weight="700" letter-spacing="2">INTERIOR DE LA MINA</text>
+
+<!-- Superficie -->
+<g font-size="12" text-anchor="middle">
+<rect x="60" y="55" width="170" height="80" rx="12" fill="#16264a" stroke="#38bdf8"/>
+<text x="145" y="90" fill="#fff" font-size="16" font-weight="700">Gateway</text><text x="145" y="112" fill="#9aa6bd">de superficie</text>
+<rect x="320" y="55" width="320" height="80" rx="12" fill="#16264a" stroke="#38bdf8"/>
+<text x="480" y="84" fill="#fff" font-size="16" font-weight="700">Plataforma AtmoSmart</text><text x="480" y="104" fill="#9aa6bd">Render · Supabase · Asistente IA</text><text x="480" y="122" fill="#9aa6bd">Ventanas de tiempo: sector o toda la mina</text>
+<rect x="730" y="55" width="170" height="80" rx="12" fill="#16264a" stroke="#f5b301"/>
+<text x="815" y="90" fill="#fff" font-size="16" font-weight="700">Supervisor</text><text x="815" y="112" fill="#f5b301">confirma la emergencia</text>
+</g>
+<line x1="230" y1="95" x2="318" y2="95" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="640" y1="95" x2="728" y2="95" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#b)"/>
+<text x="480" y="160" fill="#9aa6bd" font-size="12" text-anchor="middle" font-weight="700">2 · ANÁLISIS EN SUPERFICIE + DECISIÓN HUMANA</text>
+
+<!-- Bajada por superficie: supervisor -> gateway -> pozo -> interior -->
+<path d="M815 135 L815 182 L190 182 L190 322" stroke="#f5b301" stroke-width="3" fill="none" stroke-dasharray="7 5"/>
+<text x="500" y="200" fill="#f5b301" font-size="12" text-anchor="middle" font-weight="700">3 · BAJADA: la orden regresa por las mismas antenas</text>
+
+<!-- Subida: boca -> gateway -->
+<line x1="145" y1="290" x2="145" y2="137" stroke="#38bdf8" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#b)"/>
+
+<!-- Interior -->
+<g fill="#38bdf8"><circle cx="330" cy="310" r="9"/><circle cx="470" cy="310" r="9"/><circle cx="610" cy="310" r="9"/></g>
+<g stroke="#38bdf8" stroke-width="2" fill="none"><path d="M318 294a18 18 0 0 1 24 0"/><path d="M458 294a18 18 0 0 1 24 0"/><path d="M598 294a18 18 0 0 1 24 0"/></g>
+<g fill="#9aa6bd" font-size="11" text-anchor="middle"><text x="330" y="340">antena</text><text x="470" y="340">antena</text><text x="610" y="340">antena</text></g>
+<text x="470" y="262" fill="#38bdf8" font-size="12" text-anchor="middle" font-weight="700">1 · SUBIDA: lecturas en tiempo real (repetidoras cada 150 m)</text>
+
+<!-- Subida horizontal (derecha -> izquierda) -->
+<path d="M730 290 L145 290" stroke="#38bdf8" stroke-width="3" fill="none" stroke-dasharray="7 5"/>
+<!-- Bajada horizontal (izquierda -> derecha) -->
+<path d="M190 322 L190 360 L728 360" stroke="#f5b301" stroke-width="3" fill="none" stroke-dasharray="7 5" marker-end="url(#o)"/>
+
+<g text-anchor="middle">
+<rect x="730" y="262" width="170" height="70" rx="12" fill="#2a2018" stroke="#38bdf8"/>
+<text x="815" y="290" fill="#fff" font-size="15" font-weight="700">Frente de explotación</text>
+<text x="815" y="310" fill="#9aa6bd" font-size="11">4 sensores + polvo</text><text x="815" y="324" fill="#9aa6bd" font-size="11">memoria interna de respaldo</text>
+<rect x="730" y="345" width="170" height="80" rx="12" fill="#2a2018" stroke="#f5b301"/>
+<text x="815" y="373" fill="#fff" font-size="15" font-weight="700">Casco + brazalete</text>
+<text x="815" y="391" fill="#9aa6bd" font-size="11">alarma sonora + semáforo</text>
+</g>
+<circle cx="780" cy="410" r="6" fill="#22c55e"/><circle cx="815" cy="410" r="6" fill="#f5b301"/><circle cx="850" cy="410" r="6" fill="#ef4444"/>
+<text x="145" y="312" fill="#9aa6bd" font-size="11" text-anchor="middle">Bocamina</text>
+<text x="145" y="326" fill="#9aa6bd" font-size="11" text-anchor="middle">/ pozo</text>
+</svg>
